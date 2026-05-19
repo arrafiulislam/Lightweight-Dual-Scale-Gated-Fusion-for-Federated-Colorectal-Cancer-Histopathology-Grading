@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Classification performance of Centralized and Federated (FL-IID FedProx) learning on CRC-HGD-v2. Results reported on the held-out test set (15\% stratified split). Bold: best per metric per magnification branch.}
+\label{tab:colon5_results}
+\begin{tabular}{llccccccc}
+\toprule
+Branch & Method & Acc & Macro-F1 & Macro-AUC & Recall-GI & Recall-GII & Recall-GIII \\
+\midrule
+with_4x & Centralized & 0.856100 & 0.859000 & 0.964300 & 0.814000 & 0.850500 & 0.979600 \\
+with_4x & FL-IID FedProx & \textbf{0.8632} & \textbf{0.8624} & \textbf{0.9684} & 0.860500 & 0.850500 & 0.898000 \\
+without_4x & Centralized & 0.837900 & 0.842400 & 0.960900 & 0.814200 & 0.802100 & 0.977300 \\
+without_4x & FL-IID FedProx & 0.873500 & 0.876400 & 0.964600 & 0.876100 & 0.833300 & 0.954500 \\
+with_4x & FL-Dirichlet & 0.835100 & 0.838300 & 0.953700 & 0.798400 & 0.813100 & 0.979600 \\
+without_4x & FL-Dirichlet & \textbf{0.8775} & \textbf{0.8821} & \textbf{0.9731} & 0.831900 & 0.895800 & 0.954500 \\
+\bottomrule
+\end{tabular}
+\end{table}

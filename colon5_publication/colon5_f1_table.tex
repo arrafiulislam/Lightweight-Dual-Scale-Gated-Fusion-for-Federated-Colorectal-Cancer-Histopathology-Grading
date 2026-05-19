@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Per-class F1-score breakdown. GI=Grade I (Well Diff.), GII=Grade II (Mod. Diff.), GIII=Grade III (Poorly Diff.).}
+\label{tab:colon5_f1_breakdown}
+\begin{tabular}{llcccc}
+\toprule
+Branch & Method & F1-GI & F1-GII & F1-GIII & Macro-F1 \\
+\midrule
+with_4x & Centralized & 0.8537 & 0.8505 & 0.8727 & 0.8590 \\
+with_4x & FL-IID FedProx & 0.8740 & 0.8505 & 0.8627 & 0.8624 \\
+without_4x & Centralized & 0.8479 & 0.8105 & 0.8687 & 0.8424 \\
+without_4x & FL-IID FedProx & 0.8800 & 0.8556 & 0.8936 & 0.8764 \\
+with_4x & FL-Dirichlet & 0.8408 & 0.8169 & 0.8571 & 0.8383 \\
+without_4x & FL-Dirichlet & 0.8744 & 0.8687 & 0.9032 & 0.8821 \\
+\bottomrule
+\end{tabular}
+\end{table}
